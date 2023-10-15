@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hello World!</h1>
+<p>Welcome to my first Django project!</p>
+
+<ul>
+  {% for x in questions %}
+    <li><a href="detail/{{ x.id }}">{{ x.question_text }}</a></li>
+  {% endfor %}
+</ul>
+
+</body>
+</html>
