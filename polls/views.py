@@ -10,11 +10,5 @@ def index(request):
         "questions": questions
     }
 
-    return render(request, template_name="index.html", context=options)
+    return render(request, template_name="pages/index.html", context=options)
 
-
-def detail(request, id):
-    options = {
-        "id": id
-    }
-    return render(request, template_name="question_detail.html", context=options)
