@@ -12,3 +12,10 @@ def index(request):
 
     return render(request, template_name="pages/index.html", context=options)
 
+
+def detail(request):
+    name = request.GET.get('name', '')
+    context = {
+        "name": name
+    }
+    return render(request, template_name="pages/doc_detail.html", context=context)
